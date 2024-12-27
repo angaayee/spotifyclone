@@ -186,7 +186,6 @@ i{
     flex-direction: column;
     justify-content: space-around;
     font-size: 10px;
-    bottom: 250px;
     margin: 10px;
     background-color: transparent;
     margin-left: 20px;
@@ -330,7 +329,60 @@ hr{
 
 @media screen and (max-width:600px){
         body{
-            background-color: antiquewhite;
+            font-size: 12px;
+        }
+        .create-playlist p,.podcasts p{
+            font-size: 12px;
+        }
+        .create-playlist span, .podcasts span{
+            font-size: 8px;
+        }
+        .create-playlist button, .podcasts button {
+            padding: 2px;
+            font-size: 8px;
+        }
+        .ritemcard{
+            flex-basis: 120px;
+            height: 150px;
+        }
+        .left-music-container{
+            width:35%;
+        }
+        .right-music-container {
+            left: 36%;
+            background-color: #121212;
+            height: max-content;
+            width: 58%;
+        }
+        .footer-left-container{
+            font-size: 8px;
+        }
+        .language{
+            font-size: 8px;
+            padding: 3px;
+        }
+        .ritemcard h3{
+            font-size: 10px;
+        }
+        .ritemcard p{
+            font-size: 8px;
+        }
+        .rc-footer{
+            font-size: 10px;
+        }
+        .rc-footer div a{
+            font-size: 9px;
+        }
+        .ritemcard h3{
+            bottom: -4px;
+        }
+        .ritemcard p{
+            bottom: -13px;
+        }
+        .log-sign button {
+            padding: 4px;
+            margin-right: 35px;
+            font-size: 11px;
         }
     
 }
