@@ -1,0 +1,262 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="stylesheet" href="./css/spotify.css" /><link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    </head>
+    <body>
+        <nav>
+            <i class="fi fi-brands-spotify" id="icon"></i>
+            <div class="search">
+                <i class="fi fi-br-house-blank"></i>
+                <i class="fi fi-br-search"></i>
+                <input type="search"  id="searchbox" placeholder="What do you want to play?"/>
+            </div>
+            <div class="log-sign">
+                <button>Sign Up</button>
+                <button>Log In</button>
+            </div>
+        </nav>
+        <div class="music-container">
+            <div class="left-music-container">
+                <div class="library">
+                    <div class="lib">
+                        <i class="fi fi-bs-book-alt"></i>
+                        <p>Library</p>
+                    </div>
+                    <i class="fi fi-br-plus"></i>
+                </div>
+                    <div class="create-playlist">
+                        <p>Create your first playlist</p>
+                        <span>It's easy,we'll help you</span>
+                        <button>Create playlist</button>
+                    </div>
+                    <div class="podcasts">
+                        <p>Let's find some podcasts to follow</p>
+                        <span>We'll keep you updated on new episodes</span>
+                        <button>Browse podcasts</button>
+                    </div>
+                    <div class="footer-left-container">
+                        <div>
+                            <a href="#">Legal</a>
+                            <a href="#">Safety & Privacy Center</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                       <div>
+                        <a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                       </div>
+                       <div>
+                        <a href="#">Accessibility</a>
+                       </div>
+                    </div>
+                    <button class="language"><i class="fi fi-rr-globe"></i>  English</button>
+            </div>
+            <div class="right-music-container">
+                <div id="music-world">
+                    <h3>Popular artists</h3>
+                    <div class="ritem">
+                        <div class="ritemcard">
+                            <img src="./images/artist1.jpeg">
+                            <h3>Hariharan</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/artist2.jpeg">
+                            <h3>Arjit Singh</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+    
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/artist3.jpeg">
+                            <h3>Unni Krishnan</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton" ></span>
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/artist4.jpeg">
+                            <h3>Anirudh</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton" ></span>
+                        </div>
+                        <!-- <div class="ritemcard">
+                            <img src="./images/artist5.jpeg">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+                        </div> -->
+                    </div>
+
+                    <h3>Popular Albums and Singers</h3>
+                    <div class="ritem">
+                        <div class="ritemcard" >
+                            <img src="./images/album1.jpeg" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/album2.jpeg" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+    
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/album3.jpeg" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton" ></span>
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/album4.jpeg" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton" ></span>
+                        </div>
+                        <!-- <div class="ritemcard">
+                            <img src="./images/album5.jpeg" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+                        </div> -->
+                    </div>
+
+                    <h3>Popular Radios</h3>
+                    <div class="ritem">
+                        <div class="ritemcard" >
+                            <img src="./images/radio1.png" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/radio2.png" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+    
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/radio3.png" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton" ></span>
+                        </div>
+                        <div class="ritemcard">
+                            <img src="./images/radio4.png" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton" ></span>
+                        </div>
+                        <!-- <div class="ritemcard">
+                            <img src="./images/radio5.png" id="album">
+                            <h3>Name</h3>
+                            <p>Artist</p>
+                            <span id="play-btn"><img src="./images/play-button.png" id="play-buton"/></span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="each-item">
+                    <i class="fi fi-rr-left" id="back"></i>
+                    <img src="./images/artist1.jpeg" id="main-music-img" />
+                    <!-- <h3>Hariharan</h3> -->
+                    <table colspan = "3" id="music-table">
+                        <tr>
+                            <th>Track</th>
+                            <th>Artists</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr itemid="1">
+                            <td id="song-name">Meenama</td>
+                            <td>Hariharan</td>
+                            <td>05:53</td>
+                        </tr>
+                        <tr itemid="2"> 
+                            <td id="song-name">Kaadhala Kaadhala</td>
+                            <td>Hariharan</td>
+                            <td>3:50</td>
+                        </tr>
+                        <tr itemid="3">
+                            <td id="song-name">Rosapoo Chinna Rosapoo</td>
+                            <td>Hariharan</td>
+                            <td>04.31</td>
+                        </tr>
+                        <tr itemid="4">
+                            <td id="song-name">Poiyavadhu Sol Kanne</td>
+                            <td>Hariharan</td>
+                            <td>03.02</td>
+                        </tr>
+                        <tr itemid="5">
+                            <td id="song-name">Kadhal Kaditham</td>
+                            <td>Hariharan</td>
+                            <td>03.02</td>
+                        </tr>
+                    </table>
+                    <div id="music">
+                        <h4 id="music-name"></h4>
+                        <div id="play-icons">
+                            <i class="fi fi-rr-arrow-small-left"></i>
+                            <i class="fi fi-rr-play"></i>
+                            <i class="fi fi-rr-arrow-small-right"></i>
+                        </div>
+                        <input type="range" id="progressBar" value="0" min="0"/>
+                    </div>
+                </div>
+                <div class="rc-footer">
+                    <div>
+                        <h3>Company</h3>
+                        <div>
+                            <a href="">About</a>
+                            <a href="">Jobs</a>
+                            <a href="">For the Record</a>
+                        </div>
+                    </div>
+                <div>
+                    <h3>Communities</h3>
+                    <div>
+                        <a href="">For Artists</a>
+                        <a href="">Developers</a>
+                        <a href="">Advertising</a>
+                        <a href="">Investors</a>
+                        <a href="">Vendors</a>
+                    </div>
+                </div>
+            <div>
+                <h3>Useful Links</h3>
+                <div>
+                    <a href="">Support</a>
+                    <a href="">Free Mobile App</a>
+                </div>
+        </div>
+        <div>
+            <h3>Spotify Plans</h3>
+            <div>
+                <a href="">Premium Individual</a>
+                <a href="">Premium Duo</a>
+                <a href="">Premium Family</a>
+                <a href="">Premium Student</a>
+                <a href="">Spotify Free</a>
+            </div>
+        </div>
+            </div>
+            <hr>
+            <div class="copyrights">
+                <p>&copy;2025 Spotify AB</p>
+            </div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/spotify.js" ></script>
+
+</html>

@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+}
+body{
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #000000;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    background-color: #000000;
+}
+i{
+    color: #ffffff;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search i{
+    margin-right: 10px;
+}
+#icon{
+    font-size: 50px;
+}
+#icon:hover{
+    scale: 1.1;
+}
+.log-sign button{
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    color: #918f8b;
+    font-size: 15px;
+    background-color: #000000;
+}
+.log-sign button:hover{
+    background-color: #ffffff;
+    border-radius: 30px;
+    color: #000000;
+}
+#searchbox{
+    outline: none;
+    border-radius: 30px;
+    width: 30vw;
+    height: 40px;
+    background-color: #2A2A2A;
+    border: none;
+    color: #ffffff;
+    padding-left: 40px;
+    position: relative;
+}
+.fi-br-search{
+    position: absolute;
+    right: 65%;
+    z-index: 1;
+    background-color: transparent;
+}
+#searchbox:focus{
+    border: 2px solid #ffffff;
+}
+.fi-br-house-blank{
+    background-color: #2A2A2A;
+    padding: 10px;
+    border-radius: 50%;
+}
+.fi-br-house-blank:hover{
+    scale: 1.2;
+}
+.music-container{
+    display: flex; /* If you want other containers to align horizontally */
+    margin: 10px;
+    height: calc(100vh - 12vh);
+    width: 100%;
+    position: relative;
+    top: 70px;
+}
+.left-music-container{
+    background-color: #121212;
+    border-radius: 5px;
+    height: 100%;
+    width: 25%;
+    position: fixed;
+}
+.library{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #121212;
+}
+.lib{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #918f8b;
+    background-color: #121212;
+    position: relative;
+}
+.lib i{
+    margin-right: 10px;
+    color: #918f8b;
+}
+.lib p{
+    background-color: #121212;
+}
+.lib i :hover{
+    color: #ffffff;
+}
+.lib:hover , .lib i:hover{
+    color: #ffffff;
+}
+.fi-br-plus{
+    padding: 10px;
+    background-color: #121212;
+    position:absolute;
+    left:  100%;
+}
+.fi-br-plus:hover{
+    background-color: #918f8b;
+    border-radius: 50px;
+}
+
+.create-playlist , .podcasts{
+    color: #ffffff;
+    background-color: transparent;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2A2A;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px;
+}
+.create-playlist{
+    margin-top: 55px;
+}
+
+.podcasts{
+    top: 230px;
+}
+.create-playlist p , .podcasts p{
+    font-size: 18px;
+    background-color: transparent;
+}
+.create-playlist span , .podcasts span{
+    font-size:13px;
+    background-color: transparent;
+}
+.create-playlist button , .podcasts button{
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #000000;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    max-width: 150px;
+    min-width: 50px;
+}
+.create-playlist button:hover ,.podcasts button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer-left-container{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 10px;
+    margin: 10px;
+    background-color: transparent;
+    margin-left: 20px;
+}
+.footer-left-container div a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    line-height: 2.3;
+    font-weight: lighter;
+    color:#b1b0b0;
+}
+.footer-left-container a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+.language{
+    position: absolute;
+    bottom: 100px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+.language:hover{
+    transform: scale(1.1);
+}
+.right-music-container{
+    margin-left: 10px;
+    border-radius: 3px;
+    color: #ffffff;
+    position: relative;
+    left: 26%;
+    background-color:#121212;
+    height: max-content;
+    width: 73%;
+}
+.right-music-container h3{
+    padding: 10px;
+
+}
+.ritem{
+    display: flex;
+    color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ritemcard{
+    color: #ffffff;
+    margin: 10px;
+    flex-basis: 250px;
+    height: 250px;
+    position: relative;
+}
+.ritemcard img{
+    border-radius: 50%;
+    height: 80%;
+    width: 90%;
+    padding: 10px;
+    background-color: transparent;
+}
+.ritemcard p , .ritemcard h3{
+    position: absolute;
+    bottom:-8px;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+}
+.ritemcard h3{
+    bottom: 5;
+    font-size: 14px;
+}
+.ritemcard p{
+    font-size: 10px;
+}
+.ritemcard:hover{
+    background: hsla(333, 37%, 46%, 1);
+    background: linear-gradient(180deg, hsla(333, 37%, 46%, 1) 0%, hsla(240, 1%, 45%, 1) 0%, hsla(197, 34%, 14%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(333, 37%, 46%, 1) 0%, hsla(240, 1%, 45%, 1) 0%, hsla(197, 34%, 14%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(333, 37%, 46%, 1) 0%, hsla(240, 1%, 45%, 1) 0%, hsla(197, 34%, 14%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A04970", endColorstr="#737375", GradientType=1 );
+    border-radius: 3px;
+}
+#play-btn #play-buton{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20;
+    bottom: 20;
+    opacity: 0;
+}
+.ritemcard:hover #play-btn #play-buton{
+    opacity: 1;
+}
+.ritemcard #album{
+    border-radius: 15px;
+}
+.rc-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.rc-footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.rc-footer div h3{
+    background-color: transparent;
+}
+.rc-footer div a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    font-weight: lighter;
+    color: #b1b0b0;
+    font-size: 14px;
+}
+.rc-footer div a:hover{
+    text-decoration: underline;
+}
+hr{
+    height: 0.1px; 
+    background-color: #757171;
+    border: none;
+    margin: 5px 30px;
+}
+.copyrights{
+    font-size: 14px;
+    margin: 25px;
+    color: #757171;
+}
+
+.fi-rr-left{
+    padding: 10px;
+    margin: 10px;
+}
+.fi-rr-left:hover{
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: max-content;
+    color: #000000;
+}
+
+.each-item{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.each-item img ,.each-item h3{
+    align-self: center;
+    max-width: 200px;
+}
+
+table{
+    color: #ffffff;
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-spacing: 0px 10px;
+
+}
+
+tr:first-child{
+    background-color: #515050;
+    /* display: flex;
+    justify-content: space-between; */
+}
+tr{
+     /* display: flex;
+    justify-content: space-between;  */
+    background-color: #2A2A2A;
+    margin: 10px;
+}
+tr:hover{
+    transform: scale(1.01);
+    background-color: #ffffff;
+    color: #000000;
+}
+td{
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+td:nth-child(1) ,th:nth-child(1){
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+td:nth-child(3) , th:nth-child(3){
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+th{
+    font-size: 13px;
+    padding: 10px;
+}
+.each-item img{
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#progressBar{
+    width: 50vw;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+h4{
+    width: 50vw;
+    margin-left: 15%;
+}
+
+#play-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.fi-rr-arrow-small-left:hover,.fi-rr-play:hover,.fi-rs-pause-circle:hover,.fi-rr-arrow-small-right:hover{
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #000000;
+}
+
+.fi-rr-arrow-small-left,.fi-rr-play,.fi-rs-pause-circle,.fi-rr-arrow-small-right{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#music{
+    height: fit-content;
+}
+
+
+
+@media screen and (max-width:600px){
+        body{
+            font-size: 12px;
+        }
+        .create-playlist p,.podcasts p{
+            font-size: 12px;
+        }
+        .create-playlist span, .podcasts span{
+            font-size: 8px;
+        }
+        .create-playlist button, .podcasts button {
+            padding: 2px;
+            font-size: 8px;
+        }
+        .ritemcard{
+            flex-basis: 120px;
+            height: 150px;
+        }
+        .left-music-container{
+            width:35%;
+        }
+        .right-music-container {
+            left: 36%;
+            background-color: #121212;
+            height: max-content;
+            width: 58%;
+        }
+        .footer-left-container{
+            font-size: 8px;
+        }
+        .language{
+            font-size: 8px;
+            padding: 3px;
+        }
+        .ritemcard h3{
+            font-size: 10px;
+        }
+        .ritemcard p{
+            font-size: 8px;
+        }
+        .rc-footer{
+            font-size: 10px;
+        }
+        .rc-footer div a{
+            font-size: 9px;
+        }
+        .ritemcard h3{
+            bottom: -4px;
+        }
+        .ritemcard p{
+            bottom: -13px;
+        }
+        .log-sign button {
+            padding: 4px;
+            margin-right: 35px;
+            font-size: 11px;
+        }
+        td{
+            padding: 8px;
+            font-size: 9px;
+        }
+        th{
+            font-size: 10px;
+            padding: 9px;
+        }
+        th:nth-child(2){
+            margin-left: 30px;
+        }
+        #music {
+            margin: 16px;
+            position: relative;
+        }
+        #progressBar {
+            position: absolute;
+            width: 100%;
+            margin-left: 0;
+            height: 5px;
+        }
+        h4{
+            width: 0;
+            margin: 0;
+            font-size: 10px;
+        }
+    
+}
